@@ -2,15 +2,13 @@ package view;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.net.URL;
 
-import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.SwingConstants;
 
 /**
  * 
@@ -29,8 +27,10 @@ public class BJ_Frame extends JFrame implements	KeyListener{
 
 	public BJ_Frame(){
 		score = 0;
+		ImageIcon img = new ImageIcon("src/view/images/icon.png");
+		this.setIconImage(img.getImage());
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setTitle("21 Slim");
+		this.setTitle("21 (Slim)");
 		this.setSize(316,189);
 		setImageAndFontColor();
 //		label.setIcon(new ImageIcon("src/view/images/lame.gif"));
